@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gasolina</title>
+</head>
+<body>
+  <h2>Calculadora de Litros de Gasolina</h2>
+  <button onclick="calcularGasolina()">Calcular</button>
+
+  <script>
+    function calcularGasolina() {
+      let precoLitro = parseFloat(prompt("Digite o preço do litro da gasolina (em R$):"));
+      let valorPago = parseFloat(prompt("Digite o valor a ser abastecido (em R$):"));
+      let litros = valorPago / precoLitro;
+      alert("Você conseguiu colocar " + litros.toFixed(2) + " litros de gasolina no tanque.");
+    }
+  </script>
+</body>
+</html>
