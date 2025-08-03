@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volume da Caixa</title>
+</head>
+<body>
+  <h2>Calcular Volume de uma Caixa Retangular</h2>
+  <button onclick="calcularVolume()">Calcular Volume</button>
+
+  <script>
+    function calcularVolume() {
+      let comprimento = parseFloat(prompt("Digite o comprimento (cm):"));
+      let largura = parseFloat(prompt("Digite a largura (cm):"));
+      let altura = parseFloat(prompt("Digite a altura (cm):"));
+      let volume = comprimento * largura * altura;
+      alert("O volume da caixa é " + volume.toFixed(2) + " cm³");
+    }
+  </script>
+</body>
+</html>
